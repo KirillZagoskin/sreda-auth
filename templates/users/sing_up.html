@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<h1>SING UP <b style="color: green">SUCCESS</b></h1>
+{% else %}
+<h1>SING UP <b style="color: red">FAIL!!!!</b></h1>  
+{% endif %}
+{% endblock content %}
